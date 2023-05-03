@@ -1,12 +1,10 @@
-import { ReactDOM } from 'react';
-import './App.css';
-import Access from './components/access/Access';
-import Blog from './components/blog/Blog';
-import Gallery from './components/gallery/Gallery';
-import Home from './components/home/Home';
-import Navbar from './components/navbar/Navbar';
-import { BrowserRouter as  Router, Routes, Route, Link } from 'react-router-dom';
-
+import "./App.css";
+import Access from "./components/access/Access";
+import Blog from "./components/blog/Blog";
+import Gallery from "./components/gallery/Gallery";
+import Home from "./components/home/Home";
+import Navbar from "./components/navbar/Navbar";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const App = () => {
   return (
@@ -20,6 +18,6 @@ const App = () => {
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
