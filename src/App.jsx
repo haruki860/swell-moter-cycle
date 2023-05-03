@@ -1,3 +1,4 @@
+import { ReactDOM } from 'react';
 import './App.css';
 import Access from './components/access/Access';
 import Blog from './components/blog/Blog';
