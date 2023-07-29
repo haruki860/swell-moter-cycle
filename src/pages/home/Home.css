@@ -1,0 +1,77 @@
+.sliderBike {
+    margin: auto;
+    text-align: center;
+    display: block;
+
+    padding:  30px 40px;
+    width: 90vw;
+    height: 70vh;
+}
+
+.flex {
+    display: flex;
+    vertical-align: top;
+}
+
+.ABOUT-US {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    margin: 20px 40px 20px 40px;
+    padding: 10px 40px ;
+}
+
+.shop {
+    width: 65vw;
+    height: 50vh;
+    padding-left: 70px;
+    padding-top: 30px;
+}
+
+.flexFlow {
+    flex-flow: column;
+    padding: 0 40px 0 0;
+    margin: 30px 20px 10px 10px;
+    position: relative;
+}
+
+.aboutusTitle {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+.aboutuIntroductionText {
+margin: 10px 20px 30px 5px;
+font-size: 18px;
+}
+
+.contact {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tel {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.fax {
+    font-size: 20px;
+}
+.contactPosition {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+
+button.instagram {
+    border: none;
+    background: transparent;
+}
+
+button.instagram:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
