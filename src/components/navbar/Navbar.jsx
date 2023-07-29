@@ -1,8 +1,6 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBell } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -12,7 +10,6 @@ const Navbar = () => {
 
         <nav>
           <Link to="/home">HOME</Link>
-          <FontAwesomeIcon icon={faBell} />
         </nav>
       </div>
     </>
