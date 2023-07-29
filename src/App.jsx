@@ -1,5 +1,6 @@
 import "./App.css";
 import Home from "./pages/home/Home";
+import Access from "./pages/access/Access";
 import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -9,6 +10,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/home" element={<Home />}></Route>
+        <Route path="/access" element={<Access />}></Route>
       </Routes>
     </Router>
   );

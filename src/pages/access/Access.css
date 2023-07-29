@@ -1,0 +1,17 @@
+.shop {
+    text-align: center;
+    font-size: 40px;
+    margin:auto;
+}
+
+.wrap {
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mailAddress{
+    
+  }
