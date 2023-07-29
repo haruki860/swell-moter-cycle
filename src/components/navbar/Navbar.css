@@ -1,12 +1,28 @@
+div.navbarLog {
+    display: flex;
+    vertical-align: text-top;
+    background-color: black;
+    position: relative;
+}
+
+h1.log {
+    padding: 0 100px 0 100px;
+    color: white;
+    padding-top: 10px;
+}
+
+
 nav {
     display: flex;
-    justify-content: right;
+    position: absolute;
+    right:50px;
+    top: 25%;
     align-items: center;
     height: 50px;
     background-color: black;
     color: white;
     gap: 120px;
-    margin: 30px 15px;
+    /* margin: 30px 15px; */
     font-size: 30px;
 }
 
