@@ -12,9 +12,6 @@ const Navbar = () => {
 
         <nav>
           <Link to="/home">HOME</Link>
-          <Link to="/gallery">GALLERY</Link>
-          <Link to="/blog">BLOG</Link>
-          <Link to="/access">ACCESS</Link>
           <FontAwesomeIcon icon={faBell} />
         </nav>
       </div>
