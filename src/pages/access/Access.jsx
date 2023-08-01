@@ -14,24 +14,24 @@ const Access = () => {
   };
   return (
     <>
-      <div className="shop">店舗 / 営業時間</div>
-      <div className="mailAddess">
-      <div className="mail">841-0044</div>
-      <div className="address">佐賀県鳥栖市高田町73-4</div>
+      <h2 className="shop">店舗住所&emsp;/&emsp;営業時間</h2>
+      <div className="information">
+        <div className="mailAddress">
+          <div className="mail">841-0041</div>
+          <div className="address">佐賀県鳥栖市高田町73-4</div>
+        </div>
+        <div className="businessHours">
+          <div className="weekday">月〜金&emsp;10:00〜20:00</div>
+          <div className="holiday">土、日&emsp;10:00〜20:00</div>
+        </div>
       </div>
-
       <div className="wrap">
         <LoadScript googleMapsApiKey="AIzaSyBWEtUZy2xQ0-ve6dqFEHtBp7ix-xWy0Cg">
           <GoogleMap
             mapContainerStyle={container}
             center={position}
-            zoom={18.5}
-          >
-            <MarkerF
-              position={position}
-              icon={"https://maps.google.com/mapfiles/kml/paddle/red-blank.png"}
-            />
-          </GoogleMap>
+            zoom={19}
+          ></GoogleMap>
         </LoadScript>
       </div>
     </>
