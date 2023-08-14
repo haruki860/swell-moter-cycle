@@ -56,11 +56,11 @@ const Gallery = () => {
             <BookList currentBooks={currentBooks} />
             <ReactPaginate
                 breakLabel="..."
-                nextLabel="next >"
+                nextLabel=">"
                 onPageChange={handlePageClick}
                 pageRangeDisplayed={5}
                 pageCount={pageCount}
-                previousLabel="< previous"
+                previousLabel="<"
                 renderOnZeroPageCount={null}
             />
         </>

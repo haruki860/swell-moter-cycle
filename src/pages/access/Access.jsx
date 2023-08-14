@@ -12,6 +12,8 @@ const Access = () => {
     lat: 33.3443624803801,
     lng: 130.52410710790912,
   };
+
+  const MAP_API_KEY = process.env.REACT_APP_MAP_API_KEY
   return (
     <>
       <h2 className="shop">店舗住所&emsp;/&emsp;営業時間</h2>
@@ -26,7 +28,7 @@ const Access = () => {
         </div>
       </div>
       <div className="wrap">
-        <LoadScript googleMapsApiKey="AIzaSyBWEtUZy2xQ0-ve6dqFEHtBp7ix-xWy0Cg">
+        <LoadScript googleMapsApiKey={MAP_API_KEY}>
           <GoogleMap
             mapContainerStyle={container}
             center={position}

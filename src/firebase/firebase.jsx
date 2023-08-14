@@ -3,13 +3,13 @@ import firebase from 'firebase/compat/app';
 
 const getFirebase = () => {
   const firebaseConfig = {
-    apiKey: "AIzaSyBWEtUZy2xQ0-ve6dqFEHtBp7ix-xWy0Cg",
-    authDomain: "swell-moter-cycle.firebaseapp.com",
-    projectId: "swell-moter-cycle",
-    storageBucket: "swell-moter-cycle.appspot.com",
-    messagingSenderId: "103437034913",
-    appId: "1:103437034913:web:f36beab947d4ced12497e0",
-    measurementId: "G-25C96ZEJTV"
+    apiKey: process.env.REACT_APP_FB_API_KEY,
+    authDomain: process.env.REACT_APP_FB_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FB_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FB_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FB_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FB_APP_ID,
+    measurementId: process.env.REACT_APP_FB_MEASUREMENT_ID
   };
   firebase.initializeApp(firebaseConfig);
   return firebase;

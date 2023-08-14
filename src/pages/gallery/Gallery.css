@@ -3,16 +3,15 @@
     height: 150px;
 }
 
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
 li {
     list-style: none;
     display: flex;
     justify-content: center;
-}
-
-ul.pagination {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
 }
 
 ul.imageList {
@@ -25,6 +24,6 @@ ul.imageList {
     margin: 100px;
 }
 
-.active {
-    font-weight: bold;
+.selected {
+    font-weight: bolder;
 }
