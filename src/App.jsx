@@ -16,7 +16,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />}></Route>
       </Routes>
     </Router>
-  )
+  );
 };
 
 export default App;
