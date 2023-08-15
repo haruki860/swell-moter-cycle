@@ -8,6 +8,7 @@ import bike from "../../images/bike.jpg";
 import bike2 from "../../images/bike2.jpg";
 import bike3 from "../../images/bike3.jpg";
 import shop from "../../images/shop.jpg";
+
 const Home = () => {
   const settings = {
     //スライドアニメーションの設定
@@ -52,7 +53,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      ;
     </>
   );
 };

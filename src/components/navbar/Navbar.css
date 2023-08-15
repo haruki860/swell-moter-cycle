@@ -1,38 +1,36 @@
 div.navbarLog {
-    display: flex;
-    vertical-align: text-top;
-    background-color: black;
-    position: relative;
+  display: flex;
+  vertical-align: text-top;
+  background-color: black;
+  position: relative;
 }
 
 h1.log {
-    padding: 0 100px 0 100px;
-    color: white;
-    padding-top: 10px;
+  padding: 0 100px 0 100px;
+  color: white;
+  padding-top: 10px;
 }
 
-
 nav {
-    display: flex;
-    position: absolute;
-    right:50px;
-    top: 25%;
-    align-items: center;
-    height: 50px;
-    background-color: black;
-    color: white;
-    gap: 120px;
-    /* margin: 30px 15px; */
-    font-size: 30px;
+  display: flex;
+  position: absolute;
+  right: 50px;
+  top: 25%;
+  align-items: center;
+  height: 50px;
+  background-color: black;
+  color: white;
+  gap: 120px;
+  /* margin: 30px 15px; */
+  font-size: 30px;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
-    transition: all 0.4s;
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s;
 }
 
 nav a:hover {
-    color: rgb(213, 98, 98)
-
+  color: rgb(213, 98, 98);
 }

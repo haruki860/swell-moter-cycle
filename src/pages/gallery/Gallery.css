@@ -1,0 +1,29 @@
+.bookListImage {
+  width: 250px;
+  height: 150px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+ul.imageList {
+  place-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  padding-top: 30px;
+  margin: 100px;
+}
+
+.selected {
+  font-weight: bolder;
+}
