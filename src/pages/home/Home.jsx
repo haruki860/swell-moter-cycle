@@ -37,7 +37,7 @@ const Home = () => {
         })}
       </Slider>
       <div className="flex">
-        <img src={shop} className="shop" />
+        <img src={shop} className="imageShop" />
         <div className="flexFlow">
           <div className="aboutusTitle">Swell Moter Cycle</div>
           <div className="aboutuIntroductionText">
