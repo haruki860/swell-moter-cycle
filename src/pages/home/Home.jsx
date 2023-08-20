@@ -27,6 +27,7 @@ const Home = () => {
   };
   return (
     <>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes"></meta>
       <Slider {...settings}>
         {images.map((img) => {
           return (

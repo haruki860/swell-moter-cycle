@@ -5,15 +5,18 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="navbarLog">
-        <h1 className="log">Swell Moter Cycle</h1>
-
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes"
+      ></meta>
+      <h1 className="log">SMC</h1>
         <nav className="nav1">
-          <Link to="/home">HOME</Link>
-          <Link to="/access">ACCESS</Link>
-          <Link to="/gallery">GALLERY</Link>
+          <ul className="navbar">
+          <li className="homeLink"><Link to="/">HOME</Link></li>
+          <li className="accessLink"><Link to="/access">ACCESS</Link></li>
+          <li className="galleryLink"><Link to="/gallery">GALLERY</Link></li>
+          </ul>
         </nav>
-      </div>
     </>
   );
 };
