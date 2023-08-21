@@ -9,7 +9,7 @@ npm start
 ```
 ### AppEngineのデプロイとWEBサイトURL確認方法
 
-以下のコマンドを実行すると、AppEngineにデプロイできる。
+以下のコマンドを実行すると、AppEngineにデプロイできます。
 
 ```
 $ gcloud app deploy app.yaml --project [project-id]
