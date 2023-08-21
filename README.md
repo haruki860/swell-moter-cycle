@@ -7,15 +7,3 @@
 ```
 npm start
 ```
-### AppEngineのデプロイとWEBサイトURL確認方法
-
-以下のコマンドを実行すると、AppEngineにデプロイできる。
-
-```
-$ gcloud app deploy app.yaml --project [project-id]
-```
-
-以下のURLにアクセスするとWEBサイトにアクセスできます。
-```
- https://swell-moter-cycle.dt.r.appspot.com
-```
