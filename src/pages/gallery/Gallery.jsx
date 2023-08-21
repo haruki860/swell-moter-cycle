@@ -10,7 +10,7 @@ const BookList = (props) => {
       {props.currentBooks &&
         props.currentBooks.map((book) => {
           return (
-            <li key={book.image_url}>
+            <li key={book.image_url} clssName="bookImage">
               <img src={book.image_url} className="bookListImage" />
             </li>
           );

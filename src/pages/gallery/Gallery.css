@@ -7,8 +7,9 @@ ul {
   display: flex;
   justify-content: center;
   gap: 40px;
+  list-style: none;
 }
-li {
+li.bookImage {
   list-style: none;
   display: flex;
   justify-content: center;

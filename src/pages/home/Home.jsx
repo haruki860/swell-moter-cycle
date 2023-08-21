@@ -27,6 +27,10 @@ const Home = () => {
   };
   return (
     <>
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes"
+      ></meta>
       <Slider {...settings}>
         {images.map((img) => {
           return (
@@ -37,11 +41,13 @@ const Home = () => {
         })}
       </Slider>
       <div className="flex">
-        <img src={shop} className="shop" />
-        <div className="flexFlow">
+        <img src={shop} className="imageShop" />
+        <div className="flexFrow">
           <div className="aboutusTitle">Swell Moter Cycle</div>
           <div className="aboutuIntroductionText">
             佐賀県鳥栖市にあるディーラー。バイクや車の販売や整備を主に行なっており、経験、知識の豊富なオーナーが経営しています。アメ車やドイツ車喉も所有しており、お好きな方はぜひ一度訪れてください。
+          </div>
+          </div>
           </div>
           <div className="contactPosition">
             <div className="contact">CONTACT</div>
@@ -51,8 +57,7 @@ const Home = () => {
               <FaInstagram size={30} color={"#ff93ff"} />
             </button>
           </div>
-        </div>
-      </div>
+
     </>
   );
 };
