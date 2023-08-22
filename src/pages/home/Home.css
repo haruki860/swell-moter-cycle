@@ -20,8 +20,18 @@
   padding: 0 30px 50px 0;
 }
 
-.flexFrow {
-  width: 50%;
+.shop {
+  width: 65vw;
+  height: 50vh;
+  padding-left: 70px;
+  padding-top: 30px;
+}
+
+.flexFlow {
+  flex-flow: column;
+  padding: 0 40px 0 0;
+  margin: 30px 20px 10px 10px;
+  position: relative;
 }
 
 .aboutusTitle {

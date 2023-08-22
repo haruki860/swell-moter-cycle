@@ -42,7 +42,7 @@ const Home = () => {
       </Slider>
       <div className="flex">
         <img src={shop} className="imageShop" />
-        <div className="flexFrow">
+        <div className="flexFlow">
           <div className="aboutusTitle">Swell Moter Cycle</div>
           <div className="aboutuIntroductionText">
             佐賀県鳥栖市にあるディーラー。バイクや車の販売や整備を主に行なっており、経験、知識の豊富なオーナーが経営しています。アメ車やドイツ車喉も所有しており、お好きな方はぜひ一度訪れてください。
