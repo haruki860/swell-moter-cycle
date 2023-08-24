@@ -49,7 +49,7 @@ const Gallery = () => {
     return await storageRef.child(itemName).getDownloadURL();
   };
 
-  const isDesktop = useMediaQuery('(min-width: 601px)');
+  const isDesktop = useMediaQuery('(min-width: 768px)');
   
   const [startOffset, setStartOffset] = useState(0);
   const PER_PAGE = isDesktop ? 8 : 2
