@@ -2,7 +2,7 @@ import "./Gallery.css";
 import getFirebase from "../../firebase/firebase";
 import ReactPaginate from "react-paginate";
 import React, { useEffect, useState } from "react";
-import useMediaQuery from "../../components/navbar/mediaquery/useMediaQuery";
+import useMediaQuery from "../../components/mediaQuery/Mediaquery";
 import "firebase/compat/storage";
 
 const BookList = (props) => {
