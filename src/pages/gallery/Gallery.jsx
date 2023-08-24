@@ -2,6 +2,7 @@ import "./Gallery.css";
 import getFirebase from "../../firebase/firebase";
 import ReactPaginate from "react-paginate";
 import React, { useEffect, useState } from "react";
+import useMediaQuery from "../../components/navbar/mediaquery/useMediaQuery";
 import "firebase/compat/storage";
 
 const BookList = (props) => {
@@ -48,14 +49,16 @@ const Gallery = () => {
     return await storageRef.child(itemName).getDownloadURL();
   };
 
+  const isDesktop = useMediaQuery('(min-width: 601px)');
+  
   const [startOffset, setStartOffset] = useState(0);
-  const perPage = 8;
-  const endStartOffset = startOffset + perPage;
+  const PER_PAGE = isDesktop ? 8 : 2
+  const endStartOffset = startOffset + PER_PAGE;
   const currentBooks = books.slice(startOffset, endStartOffset);
-  const pageCount = Math.ceil(books.length / perPage);
+  const pageCount = Math.ceil(books.length / PER_PAGE);
 
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * perPage) % books.length;
+    const newOffset = (event.selected * PER_PAGE) % books.length;
     setStartOffset(newOffset);
   };
 
