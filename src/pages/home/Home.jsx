@@ -47,17 +47,16 @@ const Home = () => {
           <div className="aboutuIntroductionText">
             佐賀県鳥栖市にあるディーラー。バイクや車の販売や整備を主に行なっており、経験、知識の豊富なオーナーが経営しています。アメ車やドイツ車喉も所有しており、お好きな方はぜひ一度訪れてください。
           </div>
-          </div>
-          </div>
-          <div className="contactPosition">
-            <div className="contact">CONTACT</div>
-            <div className="tel">TEL : 0942-50-9835</div>
-            <div className="fax">FAX : 50-9836</div>
-            <button onClick={onClickIcon} className="instagram">
-              <FaInstagram size={30} color={"#ff93ff"} />
-            </button>
-          </div>
-
+        </div>
+      </div>
+      <div className="contactPosition">
+        <div className="contact">CONTACT</div>
+        <div className="tel">TEL : 0942-50-9835</div>
+        <div className="fax">FAX : 50-9836</div>
+        <button onClick={onClickIcon} className="instagram">
+          <FaInstagram size={30} color={"#ff93ff"} />
+        </button>
+      </div>
     </>
   );
 };
