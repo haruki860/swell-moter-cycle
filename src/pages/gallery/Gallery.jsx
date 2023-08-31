@@ -2,7 +2,7 @@ import "./Gallery.css";
 import getFirebase from "../../firebase/firebase";
 import ReactPaginate from "react-paginate";
 import React, { useEffect, useState } from "react";
-import useMediaQuery from "../../components/mediaQuery/useMediaquery";
+import useMediaQuery from "../../components/hooks/useMediaquery";
 import "firebase/compat/storage";
 
 const BookList = (props) => {
@@ -70,6 +70,13 @@ const Gallery = () => {
       <ReactPaginate
         breakLabel="..."
         nextLabel=">"
+        pageLinkClassName='page-link'
+        previousLinkClassName='page-link'
+        nextLinkClassName='page-link'
+        previousClassName='page-item' 
+        nextClassName='page-item' 
+        breakClassName='page-item'
+        containerClassName='pagination'
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
         pageCount={pageCount}

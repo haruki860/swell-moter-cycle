@@ -6,12 +6,13 @@
 
 }
 
-ul {
+ul.pagination {
   display: flex;
   justify-content: center;
   gap: 40px;
   list-style: none;
 }
+
 li.bookImage {
   list-style: none;
   display: flex;
@@ -26,6 +27,7 @@ ul.imageList {
   gap: 20px;
   padding-top: 30px;
   margin: 100px;
+  list-style: none;
 }
 
 .selected {
@@ -37,13 +39,10 @@ ul.imageList {
   .bookListImage {
     width: 300px;
     height: 200px;
-    padding: 20px 0;
     object-fit: fill;
-    margin: 0 auto;
-    display: block;
   }
   
-  ul {
+  ul.pagination {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -55,12 +54,19 @@ ul.imageList {
     list-style: none;
     display: flex;
     justify-content: center;
+    object-fit: fill;
+
   }
   
   ul.imageList {
+    place-items: center;
     display: grid;
     grid-template-columns: 1fr ;
     grid-template-rows: 1fr 1fr;
+    list-style: none;
+    gap: 20px;
+    padding: 30px 0 0 0;
+    margin: 0 auto;
   }
   
   .selected {
