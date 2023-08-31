@@ -4,10 +4,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaInstagram } from "react-icons/fa";
-import bike from "../../images/bike.jpg";
-import bike2 from "../../images/bike2.jpg";
-import bike3 from "../../images/bike3.jpg";
-import shop from "../../images/shop.jpg";
+import bike from "../../assets/bike.jpg";
+import bike2 from "../../assets/bike2.jpg";
+import bike3 from "../../assets/bike3.jpg";
+import shop from "../../assets/shop.jpg";
 
 const Home = () => {
   const settings = {
