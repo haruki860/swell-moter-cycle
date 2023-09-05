@@ -5,13 +5,21 @@ import React, { useEffect, useState } from "react";
 import useMediaQuery from "../../components/hooks/useMediaquery";
 import "firebase/compat/storage";
 
-const BookList = (props) => {
+type Book = {
+  image_url : string
+}
+
+type Props = {
+  currentBooks:Book[]
+}
+
+const BookList:FC<Props> = (props:Props) => {
   return (
     <ul className="imageList">
       {props.currentBooks &&
         props.currentBooks.map((book) => {
           return (
-            <li key={book.image_url} clssName="bookImage">
+            <li key={book.image_url} className="bookImage">
               <img src={book.image_url} className="bookListImage" />
             </li>
           );
@@ -21,7 +29,7 @@ const BookList = (props) => {
 };
 
 const Gallery = () => {
-  const [books, setBooks] = useState([]);
+  const [books, setBooks] = useState<string[]>([]);
   const storage = getFirebase().storage();
   const storageRef = storage.ref("gallery/image");
 
@@ -37,11 +45,11 @@ const Gallery = () => {
     fetchURLs();
   }, []);
 
-  const getBookURLs = async (storageRef) => {
+  const getBookURLs = async (storageRef:Reference) => {
     const all = await storageRef.listAll();
-    const itemNames = all.items.map((item) => item.name);
+    const itemNames = all.items.map((item:string) => item.name);
     return await Promise.all(
-      itemNames.map(async (name) => await getBookURL(storageRef, name)),
+      itemNames.map(async (name:string) => await getBookURL(storageRef, name)),
     );
   };
 

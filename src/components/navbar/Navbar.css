@@ -1,4 +1,4 @@
-@media screen and (min-width:601px){
+@media screen and (min-width:768px){
 
 h1.log {
   position: absolute;
@@ -35,7 +35,7 @@ nav a:hover {
   color: rgb(213, 98, 98);
 }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:767px){
   h1.log {
   font-size: 70px;
   height: 90px;

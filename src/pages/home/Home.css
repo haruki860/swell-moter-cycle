@@ -1,4 +1,4 @@
-@media screen and (min-width:767px){
+@media screen and (min-width:768px){
 .sliderBike {
   margin: auto;
   text-align: center;
@@ -79,7 +79,7 @@ button.instagram:hover {
 }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
   img.sliderBike {
     width: 80%;
     height: 50vh;
