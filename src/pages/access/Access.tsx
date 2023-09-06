@@ -33,7 +33,7 @@ const Access = () => {
         </div>
       </div>
       <div className="wrap">
-        <LoadScript googleMapsApiKey={MAP_API_KEY}>
+        <LoadScript googleMapsApiKey={MAP_API_KEY ?? ""}>
           <GoogleMap
             mapContainerStyle={container}
             center={position}
