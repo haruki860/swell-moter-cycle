@@ -1,52 +1,21 @@
-@media screen and (min-width:768px){
-
 .information {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
-.shopTitle{
+.shopTitle {
   display: flex;
   justify-content: center;
   font-size: 50px;
   font-weight: bold;
   padding: 60px 0 10px;
   gap: 75px;
-}
-.shop {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  font-weight: bold;
-}
-.shopInfo{
-  display: flex;
-  justify-content: center;
-  padding: 15px 0 10px 0;
-  gap: 70px;
-}
-.mailAddress {
-font-size: 20px;
-}
-.businessHours {
-  font-size: 20px;
-  flex-direction: column;
-}
-.wrap {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-}
-
-@media screen and (max-width:767px){
-  .information {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .shopTitle{
+  @media screen and (max-width: 767px) {
     display: flex;
     justify-content: center;
     font-size: 38px;
@@ -54,25 +23,50 @@ font-size: 20px;
     padding: 30px 0 20px;
     gap: 20px;
   }
-  .shop {
+}
+.shop {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  @media screen and (max-width: 767px) {
     margin: 0 auto;
     display: flex;
     justify-content: center;
     font-weight: bold;
   }
-  .shopInfo{
+}
+.shopInfo {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0 10px 0;
+  gap: 70px;
+  @media screen and (max-width: 767px) {
     display: flex;
     justify-content: center;
     gap: 20px;
   }
-  .mailAddress {
-  font-size: 15px;
+}
+.mailAddress {
+  font-size: 20px;
+  @media screen and (max-width: 767px) {
+    font-size: 15px;
   }
-  .businessHours {
+}
+.businessHours {
+  font-size: 20px;
+  flex-direction: column;
+  @media screen and (max-width: 767px) {
     font-size: 15px;
     flex-direction: column;
   }
-  .wrap {
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  @media screen and (max-width: 767px) {
     display: flex;
     justify-content: center;
     padding-top: 100px;

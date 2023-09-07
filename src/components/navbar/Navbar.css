@@ -1,13 +1,19 @@
-@media screen and (min-width:768px){
-
 h1.log {
-  position: absolute;
-  z-index: 1;
-  color: aliceblue;
-  padding: 0 0 0 50px;
-  font-size: 70px;
-  margin: 0;
-  height: 80px;
+    position: absolute;
+    z-index: 1;
+    color: aliceblue;
+    padding: 0 0 0 50px;
+    font-size: 70px;
+    margin: 0;
+    height: 80px;
+  @media screen and (max-width: 767px) {
+    position: static;
+    text-align: center;
+    color: black;
+    font-size: 70px;
+    height: 90px;
+    padding-right: 50px;
+  }
 }
 
 nav.nav1 {
@@ -15,61 +21,51 @@ nav.nav1 {
   height: 80px;
   padding-top: 5px;
   box-sizing: border-box;
-}
-ul.navbar{
-  display: flex;
-  justify-content: flex-end;
-  text-align: right;
-  gap: 70px;
-}
-
-nav a {
-text-decoration: none;
-color: aliceblue;
-font-size: 45px;
-padding: 0 15px 10px 0;
-margin: 0;
-}
-
-nav a:hover {
-  color: rgb(213, 98, 98);
-}
-}
-@media screen and (max-width:767px){
-  h1.log {
-  font-size: 70px;
-  height: 90px;
-  margin: 0;
-  text-align: center;
-  
-  }
-  
-  nav.nav1 {
+  @media screen and (max-width: 767px) {
     background-color: black;
     height: 80px;
     padding-top: 10px;
     box-sizing: border-box;
   }
-  ul.navbar{
+}
+ul.navbar {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  gap: 70px;
+  @media screen and (max-width: 767px) {
     display: flex;
     justify-content: center;
     text-align: right;
     gap: 15px;
   }
-  
-  nav a {
-  align-items: center;
+}
+
+nav a {
   text-decoration: none;
   color: aliceblue;
-  font-size: 25px;
-  padding: 5px 0 10px 0;
+  font-size: 45px;
+  padding: 0 15px 10px 0;
   margin: 0;
+  @media screen and (max-width: 767px) {
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 25px;
+    padding: 5px 0 10px 0;
+    margin: 0;
   }
-  li.galleryLink {
-    padding-right: 34px;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
+  color: rgb(213, 98, 98);
+  @media screen and (max-width: 767px) {
     color: rgb(213, 98, 98);
+  }
+}
+
+li.galleryLink {
+  @media screen and (max-width: 767px) {
+    padding-right: 34px;
   }
 }
