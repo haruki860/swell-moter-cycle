@@ -1,10 +1,10 @@
-import "./App.css";
-import Home from "./pages/home/Home";
-import Access from "./pages/access/Access";
-import Navbar from "./components/navbar/Navbar";
-import Gallery from "./pages/gallery/Gallery";
+import './App.css';
+import Home from './pages/home/Home';
+import Access from './pages/access/Access';
+import Navbar from './components/navbar/Navbar';
+import Gallery from './pages/gallery/Gallery';
 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 const App = () => {
   return (
