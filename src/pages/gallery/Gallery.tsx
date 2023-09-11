@@ -1,11 +1,11 @@
-import "./Gallery.css";
-import getFirebase from "../../firebase/firebase";
-import ReactPaginate from "react-paginate";
-import React, { useEffect, useState } from "react";
-import useMediaQuery from "../../components/hooks/useMediaquery";
-import "firebase/compat/storage";
-import firebase from "firebase/compat/app";
-import { ComponentProps } from "react";
+import './Gallery.css';
+import getFirebase from '../../firebase/firebase';
+import ReactPaginate from 'react-paginate';
+import React, { useEffect, useState } from 'react';
+import useMediaQuery from '../../components/hooks/useMediaquery';
+import 'firebase/compat/storage';
+import firebase from 'firebase/compat/app';
+import { ComponentProps } from 'react';
 
 type Photo = {
   image_url: string;
@@ -34,7 +34,7 @@ type StorageRef = firebase.storage.Reference;
 const Gallery: React.FC = () => {
   const [photos, setPhotos] = useState<Photo[]>([]);
   const storage = getFirebase().storage();
-  const storageRef = storage.ref("gallery/image");
+  const storageRef = storage.ref('gallery/image');
 
   useEffect(() => {
     const fetchURLs = async () => {
@@ -60,7 +60,7 @@ const Gallery: React.FC = () => {
     return await storageRef.child(itemName).getDownloadURL();
   };
 
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery('(min-width: 768px)');
 
   const [startOffset, setStartOffset] = useState(0);
   const PC_PER_PAGE = 8;
@@ -72,7 +72,7 @@ const Gallery: React.FC = () => {
 
   const handlePageClick = (
     selectedItem: Parameters<
-      NonNullable<ComponentProps<typeof ReactPaginate>["onPageChange"]>
+      NonNullable<ComponentProps<typeof ReactPaginate>['onPageChange']>
     >[0]
   ) => {
     const newOffset = (selectedItem.selected * perPage) % photos.length;

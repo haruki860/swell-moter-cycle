@@ -1,13 +1,13 @@
-import React from "react";
-import "./Home.css";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { FaInstagram } from "react-icons/fa";
-import bike from "../../assets/bike.jpg";
-import bike2 from "../../assets/bike2.jpg";
-import bike3 from "../../assets/bike3.jpg";
-import shop from "../../assets/shop.jpg";
+import React from 'react';
+import './Home.css';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { FaInstagram } from 'react-icons/fa';
+import bike from '../../assets/bike.jpg';
+import bike2 from '../../assets/bike2.jpg';
+import bike3 from '../../assets/bike3.jpg';
+import shop from '../../assets/shop.jpg';
 
 const Home = () => {
   const settings = {
@@ -23,7 +23,7 @@ const Home = () => {
   };
   const images = [bike, bike2, bike3]; //スライダーで表示する画像の配列
   const onClickIcon = () => {
-    window.open("https://www.instagram.com/arima.lowlider/", "_blanck");
+    window.open('https://www.instagram.com/arima.lowlider/', '_blanck');
   };
   return (
     <>
@@ -54,7 +54,7 @@ const Home = () => {
         <div className="tel">TEL : 0942-50-9835</div>
         <div className="fax">FAX : 50-9836</div>
         <button onClick={onClickIcon} className="instagram">
-          <FaInstagram size={30} color={"#ff93ff"} />
+          <FaInstagram size={30} color={'#ff93ff'} />
         </button>
       </div>
     </>

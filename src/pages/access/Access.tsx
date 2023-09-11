@@ -1,11 +1,11 @@
-import React from "react";
-import "./Access.css";
-import { GoogleMap, LoadScript } from "@react-google-maps/api";
+import React from 'react';
+import './Access.css';
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 const Access = () => {
   const container = {
-    width: "60vw",
-    height: "60vh",
+    width: '60vw',
+    height: '60vh',
   };
 
   const position = {
@@ -33,7 +33,7 @@ const Access = () => {
         </div>
       </div>
       <div className="wrap">
-        <LoadScript googleMapsApiKey={MAP_API_KEY ?? ""}>
+        <LoadScript googleMapsApiKey={MAP_API_KEY ?? ''}>
           <GoogleMap
             mapContainerStyle={container}
             center={position}
