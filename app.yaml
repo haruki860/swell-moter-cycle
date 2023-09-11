@@ -9,7 +9,7 @@ handlers:
   - url: .*
     static_files: build/index.html
     upload: build/index.html
-    expiration: "0s"
+    expiration: '0s'
 instance_class: F1
 automatic_scaling:
   min_idle_instances: automatic
