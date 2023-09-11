@@ -30,11 +30,11 @@ const PhotoList: React.FC<Props> = (props: Props) => {
   );
 };
 
+type StorageRef = firebase.storage.Reference;
 const Gallery: React.FC = () => {
   const [photos, setPhotos] = useState<Photo[]>([]);
   const storage = getFirebase().storage();
   const storageRef = storage.ref("gallery/image");
-  type StorageRef = firebase.storage.Reference;
 
   useEffect(() => {
     const fetchURLs = async () => {
